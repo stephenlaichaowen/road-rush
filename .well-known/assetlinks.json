@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "app.netlify.road_rush.twa",
+                   "sha256_cert_fingerprints": ["5F:BD:68:64:B1:E4:EF:33:A2:EB:E6:5B:F2:1D:3A:A3:65:DD:5C:7A:3F:30:4D:AB:03:39:58:BA:3F:FA:E7:BD"] }
+    }]
