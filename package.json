@@ -1,0 +1,14 @@
+{
+  "name": "cars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "scripts": {
+    "start": "live-server --port=8090",
+    "remote": "git remote add origin https://github.com/stephenlaichaowen/road-rush.git",
+    "github": "git add . && git commit -m 'commit' && git push origin master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

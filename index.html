@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cars</title>
+  <meta charset="utf-8">
+  <meta content="user-scalable=0, initial-scale=1, width=device-width" name="viewport">
+  <link rel="icon" href="images/icon.png">
+  <link rel="manifest" href="manifest.json">
+  <script src="js/phaser.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scenes/sceneMain.js"></script>
+  <script src="js/scenes/sceneLoad.js"></script>
+  <script src="js/scenes/sceneTitle.js"></script>
+  <script src="js/scenes/sceneOver.js"></script>
+  <script src="js/classes/road.js"></script>
+  <script src="js/classes/util/align.js"></script>
+  <script src="js/classes/util/collision.js"></script>
+  <script src="js/constants.js"></script>
+  <script src="js/classes/mc/model.js"></script>
+  <script src="js/classes/mc/controller.js"></script>
+  <script src="js/classes/comps/scoreBox.js"></script>
+  <script src="js/classes/comps/bar.js"></script>
+  <script src="js/classes/util/alignGrid.js"></script>
+  <script src="js/classes/ui/flatButton.js"></script>
+  <script src="js/classes/ui/toggleButton.js"></script>
+  <script src="js/classes/ui/soundButtons.js"></script>
+  <script src="js/classes/util/mediaManager.js"></script>
+  <script src="sw.js"></script> 
+</head>
+
+<body>
+  <div id="phaser-game"></div>
+</body>
+</html>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+  }
+</style>
+
+<script>
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker
+      .register('./sw.js')
+      .then(registration => {
+        console.log(registration);
+      })
+      .catch(console.error)
+  }
+</script>
